@@ -87,6 +87,11 @@ function quit(){
 // The following line starts the application
 startApp("Mohammad")
 
+/** 
+ * help u to know what command available for the application
+ * 
+ * @returns {void}
+*/
 function help() {
   console.log("click hello-- to start the app \n click quit -- quit the app \n click exit -- exit the app \n help--list all the command available");
 }
