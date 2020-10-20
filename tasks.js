@@ -33,6 +33,8 @@ function startApp(name){
  * @param  {string} text data typed by the user
  * @returns {void}
  */
+
+
 function onDataReceived(text) {
   if (text === 'quit\n' || text === 'exit\n') {
     quit();
@@ -40,10 +42,14 @@ function onDataReceived(text) {
   else if(text === 'hello\n'){
     hello();
   }
+  else if(text === 'help\n') {
+    help();
+  }
   else{
     unknownCommand(text);
   }
 }
+
 
 
 /**
@@ -80,3 +86,7 @@ function quit(){
 
 // The following line starts the application
 startApp("Mohammad")
+
+function help() {
+  console.log("click hello-- to start the app \n click quit -- quit the app \n click exit -- exit the app \n help--list all the command available");
+}
